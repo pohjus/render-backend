@@ -9,7 +9,6 @@ app.get("/", (req, res) => {
   client.query("SELECT * FROM customers").then((response) => {
     res.send(response);
   });
-  res.send("It is working what dssdsd!");
 });
 
 app.listen(port, () => {
